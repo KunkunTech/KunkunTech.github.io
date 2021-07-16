@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Kunkun&#39;s Secrets</title>
+  
+  <subtitle>世界很暗，但是你来了</subtitle>
+  <link href="http://kunkuntech.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://kunkuntech.github.io/"/>
+  <updated>2021-07-14T17:08:03.059Z</updated>
+  <id>http://kunkuntech.github.io/</id>
+  
+  <author>
+    <name>Kunkun</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello!</title>
+    <link href="http://kunkuntech.github.io/2021/07/15/hello/"/>
+    <id>http://kunkuntech.github.io/2021/07/15/hello/</id>
+    <published>2021-07-14T16:22:26.000Z</published>
+    <updated>2021-07-14T17:08:03.059Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Hello! I’m Kunkun who is new here.&lt;br&gt;I’ve tried to make this website for myself. And I wanna know how I will use it. Let’s</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>

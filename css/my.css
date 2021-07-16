@@ -12,3 +12,18 @@
         font-size: 1.5rem;
     }
 }
+
+/*美化超链接*/
+.dt-p:hover {
+    background-color: black;
+}
+
+#dt-a {
+    text-decoration:none !important; /*去掉超链接下划线*/
+
+}
+
+#dt-span {
+    color: white;
+    mix-blend-mode: difference;  /*颜色反相*/
+}
