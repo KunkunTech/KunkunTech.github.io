@@ -540,14 +540,13 @@ aid=758851886&amp;bvid=BV1264y197xT&amp;cid=357685557&amp;page=1" scrolling="no"
 <li><input checked="" disabled="" type="checkbox"> 已完成</li>
 </ul>
 <h2 id="9-代码"><a href="#9-代码" class="headerlink" title="9.代码"></a>9.代码</h2><p>代码高亮：</p>
-<h3 id="9-1-Go"><a href="#9-1-Go" class="headerlink" title="9.1 Go"></a>9.1 Go</h3><pre><code>go
-   func Fibonacci(n int) int {
-       if n &lt;= 1 {
-           return n
-       }
-       return Fibonacci(n-1) + Fibonacci(n-2)
-   }
-</code></pre>
+<h3 id="9-1-Go"><a href="#9-1-Go" class="headerlink" title="9.1 Go"></a>9.1 Go</h3><pre class="line-numbers language-go"><code class="language-go">   <span class="token keyword">func</span> <span class="token function">Fibonacci</span><span class="token punctuation">(</span>n <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token builtin">int</span> <span class="token punctuation">{</span>
+       <span class="token keyword">if</span> n <span class="token operator">&lt;=</span> <span class="token number">1</span> <span class="token punctuation">{</span>
+           <span class="token keyword">return</span> n
+       <span class="token punctuation">}</span>
+       <span class="token keyword">return</span> <span class="token function">Fibonacci</span><span class="token punctuation">(</span>n<span class="token number">-1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token function">Fibonacci</span><span class="token punctuation">(</span>n<span class="token number">-2</span><span class="token punctuation">)</span>
+   <span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>输出：</p>
 <pre class="line-numbers language-go"><code class="language-go"><span class="token keyword">func</span> <span class="token function">Fibonacci</span><span class="token punctuation">(</span>n <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token builtin">int</span> <span class="token punctuation">{</span>
     <span class="token keyword">if</span> n <span class="token operator">&lt;=</span> <span class="token number">1</span> <span class="token punctuation">{</span>
