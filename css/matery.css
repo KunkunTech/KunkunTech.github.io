@@ -2214,7 +2214,7 @@ footer .copy-right {
     border-radius: 6px;
     overflow: hidden;
     position: fixed;
-    bottom: 80px;/*用于调整按钮位置*/
+    bottom: 125px;/*用于调整按钮位置*/
     right: 15px;
     transition: 1.3s cubic-bezier(0.53, 0, 0.15, 1.3);
     z-index: 9999;
