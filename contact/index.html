@@ -72,13 +72,13 @@
       
       <i class="fas fa-list-ul" style="zoom: 0.6;"></i>
       
-      <span>列表</span>
+      <span>媒体</span>
       <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
     </a>
     <ul class="sub-nav menus_item_child ">
       
       <li>
-        <a href="/music">
+        <a href="/musics">
           
           <i class="fas fa-music" style="margin-top: -20px; zoom: 0.6;"></i>
           
@@ -87,7 +87,7 @@
       </li>
       
       <li>
-        <a href="/movie">
+        <a href="/movies">
           
           <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
           
@@ -96,7 +96,7 @@
       </li>
       
       <li>
-        <a href="/book">
+        <a href="/books">
           
           <i class="fas fa-book" style="margin-top: -20px; zoom: 0.6;"></i>
           
@@ -184,14 +184,14 @@
 			
 				<i class="fa-fw fas fa-list-ul"></i>
 			
-			列表
+			媒体
 			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
 		</a>
             <ul  style="background:  ;" >
               
                 <li>
 
-                  <a href="/music " style="margin-left:75px">
+                  <a href="/musics " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-music" style="position: absolute;left:50px" ></i>
 			      
@@ -201,7 +201,7 @@
               
                 <li>
 
-                  <a href="/movie " style="margin-left:75px">
+                  <a href="/movies " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
 			      
@@ -211,7 +211,7 @@
               
                 <li>
 
-                  <a href="/book " style="margin-left:75px">
+                  <a href="/books " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-book" style="position: absolute;left:50px" ></i>
 			      
@@ -747,7 +747,28 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-</body>
+
+        <script src="//cdn.jsdelivr.net/npm/js-base64/base64.min.js"></script>
+        <script>
+        const hasAttr = (e,a) => a.some(_=> e.attr(_)!==undefined);
+        $('a').each(function() {
+          const $this = $(this);
+          if(hasAttr($this,["data-fancybox","ignore-external-link"])) return;
+          const href = $this.attr('href');
+          if (href && href.match('^((http|https|thunder|qqdl|ed2k|Flashget|qbrowser|ftp|rtsp|mms)://)')) {
+            const strs = href.split('/');
+            if (strs.length >= 3) {
+                const host = strs[2];
+                if (host !== 'your_domain' || window.location.host) {
+                    $this.attr('href', '/go.html?u='+Base64.encode(href)+'').attr('rel', 'external nofollow noopener noreferrer');
+                    if (true) {
+                        $this.attr('target', '_blank');
+                    }
+                }
+            }
+          }
+        });
+        </script></body>
 
 </html>
 
