@@ -6,7 +6,7 @@
   <link href="http://kunkuntech.github.io/atom.xml" rel="self"/>
   
   <link href="http://kunkuntech.github.io/"/>
-  <updated>2021-07-18T10:14:45.353Z</updated>
+  <updated>2021-07-18T10:29:19.414Z</updated>
   <id>http://kunkuntech.github.io/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="http://kunkuntech.github.io/2021/07/17/Markdown-%E4%BD%BF%E7%94%A8%E8%AF%AD%E6%B3%95/"/>
     <id>http://kunkuntech.github.io/2021/07/17/Markdown-%E4%BD%BF%E7%94%A8%E8%AF%AD%E6%B3%95/</id>
     <published>2021-07-17T12:49:45.000Z</published>
-    <updated>2021-07-18T10:14:45.353Z</updated>
+    <updated>2021-07-18T10:29:19.414Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;1-什么是-Markdown&quot;&gt;1. 什么是 Markdown?&lt;/h2&gt;
-&lt;p&gt;Markdown 是一种轻量级的标记语言。它允许人们使用易读易写的纯文本格式编写文档，并支持图片、图表、数学公式等，然后转换成有效的 HTML 文档。 &lt;a</summary>
+    <summary type="html">&lt;h2 id=&quot;1-什么是-Markdown&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#1-什么是-Markdown&quot;&gt;&lt;/a&gt;1. 什么是 Markdown?&lt;/h2&gt;
+&lt;p&gt;Markdown</summary>
         
       
     
@@ -50,8 +50,12 @@
       
         
         
-    <summary type="html">&lt;p&gt;我嫉妒你身边无关紧要的人&lt;br&gt;因为他们轻而易举就能看见我朝思暮想的你&lt;/p&gt;
-&lt;p&gt;你错过的别人才会得到&lt;br&gt;正如你得到的都是别人错过的&lt;br&gt;别羡慕别人拥有的&lt;br&gt;你用的正是别人&lt;strong&gt;羡慕&lt;/strong&gt;的&lt;/p&gt;
+    <summary type="html">&lt;p&gt;我嫉妒你身边无关紧要的人&lt;br&gt;
+因为他们轻而易举就能看见我朝思暮想的你&lt;/p&gt;
+&lt;p&gt;你错过的别人才会得到&lt;br&gt;
+正如你得到的都是别人错过的&lt;br&gt;
+别羡慕别人拥有的&lt;br&gt;
+你用的正是别人&lt;strong&gt;羡慕&lt;/strong&gt;的&lt;/p&gt;
 </summary>
         
       
@@ -73,7 +77,8 @@
       
         
         
-    <summary type="html">&lt;p&gt;Hello! I’m Kunkun who is new here.&lt;br&gt;I’ve tried to make this website for myself. And I wanna know how I will use it. Let’s</summary>
+    <summary type="html">&lt;p&gt;Hello! I’m Kunkun who is new here.&lt;br&gt;
+I’ve tried to make this website for myself. And I wanna know how I will use it. Let’s</summary>
         
       
     
