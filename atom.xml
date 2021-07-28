@@ -6,7 +6,7 @@
   <link href="https://kunkuntech.github.io/atom.xml" rel="self"/>
   
   <link href="https://kunkuntech.github.io/"/>
-  <updated>2021-07-28T08:39:54.528Z</updated>
+  <updated>2021-07-28T17:45:37.707Z</updated>
   <id>https://kunkuntech.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML的基础知识</title>
+    <link href="https://kunkuntech.github.io/37862.html"/>
+    <id>https://kunkuntech.github.io/37862.html</id>
+    <published>2021-07-28T16:14:30.000Z</published>
+    <updated>2021-07-28T17:45:37.707Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="博客建站" scheme="https://kunkuntech.github.io/categories/%E5%8D%9A%E5%AE%A2%E5%BB%BA%E7%AB%99/"/>
+    
+    
+    <category term="HTML" scheme="https://kunkuntech.github.io/tags/HTML/"/>
+    
+  </entry>
   
   <entry>
     <title>南戴河游记</title>
@@ -46,7 +71,7 @@
     <link href="https://kunkuntech.github.io/1217.html"/>
     <id>https://kunkuntech.github.io/1217.html</id>
     <published>2021-07-18T16:20:20.000Z</published>
-    <updated>2021-07-27T05:03:56.880Z</updated>
+    <updated>2021-07-28T17:09:38.488Z</updated>
     
     
       
