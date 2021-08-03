@@ -532,6 +532,10 @@
         margin: auto;
     }
 
+    p {
+        text-indent: 2em;
+    }
+
 </style>
 
 <div class="row">
@@ -577,14 +581,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-07-29
+                    2021-08-03
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    516
+                    511
                 </div>
                 
 
@@ -647,13 +651,11 @@
 <p>效果如下：<br>
 <img src="http://KunkunTech.github.io/medias/logo.png" alt="博客Logo"></p>
 <h3 id="6-3-视频"><a class="header-anchor" href="#6-3-视频"></a>6.3 视频</h3>
-<pre><code>&lt;p align="center"&gt;
-&lt;iframe src="//player.bilibili.com/player.html?aid=758851886&amp;bvid=BV1264y197xT&amp;cid=357685557&amp;high_quality=1"scrolling="no" border="0"frameborder="no"framespacing="0" allowfullscreen="true" width=100% height="450"&gt; &lt;/iframe&gt;
+<pre><code>&lt;iframe src="//player.bilibili.com/player.html?aid=758851886&amp;bvid=BV1264y197xT&amp;cid=357685557&amp;high_quality=1"scrolling="no" border="0"frameborder="no"framespacing="0" allowfullscreen="true" width=100% height=450&gt; &lt;/iframe&gt;
 </code></pre>
 <p>效果如下：</p>
-<p align="center">
 <iframe src="//player.bilibili.com/player.html?aid=758851886&amp;bvid=BV1264y197xT&amp;cid=357685557&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="450"> </iframe>
-</p><h2 id="7-表格"><a class="header-anchor" href="#7-表格"></a>7.表格</h2>
+<h2 id="7-表格"><a class="header-anchor" href="#7-表格"></a>7.表格</h2>
 <p>通过下面的标记，就可以输出一份表格</p>
 <pre><code>| 标题1 | 标题2 | 标题3 |
 |------|-------|------|
@@ -736,13 +738,11 @@
 }
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="9-2-JavaScript"><a class="header-anchor" href="#9-2-JavaScript"></a>9.2 JavaScript</h3>
-<pre><code>```javascript
-function Fibonacci(num) {
-    if (num &lt;= 1) return 1;
-    return Fibonacci(num - 1) + Fibonacci(num - 2);
-}
-```
-</code></pre>
+<pre class="line-numbers language-language-javascript"><code class="language-language-javascript">    function Fibonacci(num) {
+        if (num <= 1) return 1;
+        return Fibonacci(num - 1) + Fibonacci(num - 2);
+    }
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>输出：</p>
 <pre class="line-numbers language-language-javascript"><code class="language-language-javascript">function Fibonacci(num) {
     if (num <= 1) return 1;
@@ -814,8 +814,8 @@ $$</p>
 <h3 id="11-1-开头空两格"><a class="header-anchor" href="#11-1-开头空两格"></a>11.1 开头空两格</h3>
 <pre><code>&amp;emsp;&amp;emsp;我前面空了两格
 </code></pre>
-<p>效果：</p>
-<p>  我前面空了两格</p>
+<p>效果：<br>
+  我前面空了两格</p>
 <h3 id="11-2-文字的居中"><a class="header-anchor" href="#11-2-文字的居中"></a>11.2 文字的居中</h3>
 <pre><code>&lt;center&gt;这一行需要居中&lt;/center&gt;
 </code></pre>
@@ -830,13 +830,13 @@ $$</p>
 <h4 id="11-3-2-大小更换"><a class="header-anchor" href="#11-3-2-大小更换"></a>11.3.2 大小更换</h4>
 <pre><code>&lt;font face="楷体" size=10&gt;我是楷体字&lt;/font&gt;
 </code></pre>
-<p>效果：<br>
-<font face="楷体" size="10">我是楷体字</font></p>
+<p>效果：</p>
+<p><font face="楷体" size="10">我是楷体字</font></p>
 <h4 id="11-3-3-颜色替换"><a class="header-anchor" href="#11-3-3-颜色替换"></a>11.3.3 颜色替换</h4>
 <pre><code>&lt;font face="楷体" color=red size=10&gt;我是红色楷体字&lt;/font&gt;
 </code></pre>
-<p>效果：<br>
-<font face="楷体" color="red" size="10">我是红色楷体字</font></p>
+<p>效果：</p>
+<p><font face="楷体" color="red" size="10">我是红色楷体字</font></p>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
