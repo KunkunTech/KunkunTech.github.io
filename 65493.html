@@ -29,11 +29,10 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 7.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="Kunkun's Secrets" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-okaidia.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+</head>
 
 
 
@@ -516,6 +515,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
@@ -526,7 +528,7 @@
 <p>  三年的高中生涯，妈妈一边承办着家里大大小小的事物，家务、做饭，包括我的生活起居，一边忙着自己的生意。十分有趣的是，当青春期遇上更年期，可以想象得出来，两颗不定时炸弹，谁也不知道谁先炸，谁也不知道哪个小小的举动都会引爆对方。也正是这个特殊的组合，发生了特殊的化学反应，在一段比较紧张的时间后，我开始渐渐意识到妈妈的辛苦与不易，也看得出来，很多时候，妈妈咬牙切齿，却将即将出口的更狠心的话吞了回去，而这一化学反应，少不了第三方催化剂的介入，即我们家老大，我的姐姐，她成了我和妈妈倾诉的对象，在与妈妈争吵之后，我和妈妈偷偷和姐姐分别告状，姐姐可能觉得很幼稚，甚至偷着乐了。毋庸置疑的是，在第三方的作用下，很多事都有缓和的余地，而我与妈妈也在这个过程中都成长了，我开始懂得体会别人的感受，从别人的角度出发，以至于现在我的共情能力不能说很高，但也不低。</p>
 <p>  最后想谈谈我妈妈的三观，在我看来，她的三观不仅正，而且超越她所处时代能赋予她的。她教我做家务，学做饭，不仅仅是想让我有独自生活的能力，而且是与许多婆婆不一样的，她坚持认为我结婚后不能只让女方干活、做饭，我也需要承担起这份责任。虽然目前的趋势确实是男方开始逐步接手家中大小事务，但她是作为婆婆的身份这样看待，这就与大多数婆婆存在区别。或许是她一直以来都是这样的，懂得女方的辛苦，但她的心态依旧如此，也是我所佩服的，我甚至都不用担心未来婆媳关系的处理了。</p>
 <p>  这位乐观、知足的女强人很可爱，会说三两小学学习的英语单词，偶尔来一句不biu准的普通话，被我抓住能开心很久……</p>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
                 
             </div>
             <hr/>
@@ -552,7 +554,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://www.kunkuntech.tk/65493.html">https://www.kunkuntech.tk/65493.html</a>
+                    <a href="https://KunkunTech.github.io/65493.html">https://KunkunTech.github.io/65493.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1070,7 +1072,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2021-2022</span>
+                <span id="year">2021-2026</span>
             
             <span id="year">2021</span>
             <a href="/about" target="_blank">Kunkun</a>
@@ -1362,7 +1364,7 @@ $(function () {
             const strs = href.split('/');
             if (strs.length >= 3) {
                 const host = strs[2];
-                if (host !== 'your_domain' || window.location.host) {
+                if (host !== 'KunkunTech.github.io' || window.location.host) {
                     $this.attr('href', '/go.html?u='+Base64.encode(href)+'').attr('rel', 'external nofollow noopener noreferrer');
                     if (true) {
                         $this.attr('target', '_blank');

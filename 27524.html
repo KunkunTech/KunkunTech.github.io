@@ -29,11 +29,10 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 7.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 <link rel="alternate" href="/atom.xml" title="Kunkun's Secrets" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-okaidia.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+</head>
 
 
 
@@ -516,6 +515,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
@@ -525,7 +527,7 @@
 <p>  且不谈中国戏曲主要由古代歌舞、说唱艺术、滑稽戏三种形式综合而成，短短的1个半小时，对于戏曲文化的理解或许没有那么透彻，但有传神的表演的加持，将我一次又一次拉入了戏曲的世界。优孟衣冠的“大王！”已激起我的鸡皮疙瘩，但没想到这只是前菜。虚实结合中，刚毕业学生初次上课的紧张、男女有别的马鞭持法、手握空桨踮着小碎步划船、水漫金山、现实与戏曲中缝衣服的不同表现……这一切都还历历在目，那一次次的掌声将我拉回儿时看戏的场景，我似乎明白了，这来源于生活的事情与台下的观众产生了共鸣和连接，高于生活的演绎又带给观众新鲜、扑面而来的震撼感，这也许就是戏曲艺术的魅力。</p>
 <p>  近年来多媒体的迅速发展，“快餐式”文化渗入我们的生活，现代音乐、舞蹈等蓬勃发展，再加上西方文化的侵入，我们似乎很难慢下来感受中国传统文化，以至于它们渐渐远离。清晰可见的是，大多数人可能认为学习戏曲艺术没有前途，但我至少感受到了一点，虽然余老师的专业是导演，但在表演时，老师表现得十分端庄、有素养，包括授课、对话的一举手一投足，我想这也是戏曲艺术带给老师的礼物。相信会有一批一批传承人接力，这是中国戏曲艺术经久不衰的原因，也是中国戏曲有别于古希腊戏剧和印度梵剧，依然活跃于中国乃至世界的缘由。</p>
 <p>  仅以此篇也献给那段慢生活的纯粹时光，以及我亲爱的外婆。感恩！</p>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
                 
             </div>
             <hr/>
@@ -551,7 +553,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://www.kunkuntech.tk/27524.html">https://www.kunkuntech.tk/27524.html</a>
+                    <a href="https://KunkunTech.github.io/27524.html">https://KunkunTech.github.io/27524.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1070,7 +1072,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2021-2022</span>
+                <span id="year">2021-2026</span>
             
             <span id="year">2021</span>
             <a href="/about" target="_blank">Kunkun</a>
@@ -1362,7 +1364,7 @@ $(function () {
             const strs = href.split('/');
             if (strs.length >= 3) {
                 const host = strs[2];
-                if (host !== 'your_domain' || window.location.host) {
+                if (host !== 'KunkunTech.github.io' || window.location.host) {
                     $this.attr('href', '/go.html?u='+Base64.encode(href)+'').attr('rel', 'external nofollow noopener noreferrer');
                     if (true) {
                         $this.attr('target', '_blank');
