@@ -28,3 +28,172 @@
     mix-blend-mode: difference;  /*颜色反相*/
 }
 
+/* 夜间模式切换：轻量磨砂玻璃过渡 */
+.night-mode-wipe {
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: 88888888;
+    opacity: 0;
+    backdrop-filter: blur(4px) saturate(1.24) brightness(1.06);
+    -webkit-backdrop-filter: blur(4px) saturate(1.24) brightness(1.06);
+    transition: opacity 0.24s ease;
+}
+
+.night-mode-wipe.to-dark {
+    background: rgba(18, 18, 28, 0.1);
+}
+
+.night-mode-wipe.to-light {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.night-mode-wipe.is-active {
+    opacity: 1;
+}
+
+.night-mode-wipe.is-leaving {
+    opacity: 0;
+}
+
+body,
+body .card,
+body .modal,
+body header .side-nav,
+body header .side-nav .menu-list .m-nav-show,
+body .block-with-text:after {
+    transition: background-color 0.46s ease, color 0.46s ease, filter 0.46s ease;
+}
+
+body.DarkMode .card,
+body.DarkMode .modal,
+body.DarkMode header .side-nav,
+body.DarkMode header .side-nav .menu-list .m-nav-show {
+    background-color: rgba(40, 44, 52, 0.82);
+    backdrop-filter: blur(14px) saturate(1.12);
+    -webkit-backdrop-filter: blur(14px) saturate(1.12);
+}
+
+body.DarkMode .toc-widget {
+    background-color: rgba(40, 44, 52, 0.82) !important;
+    color: rgba(255, 255, 255, 0.72);
+    filter: none !important;
+    backdrop-filter: blur(14px) saturate(1.12);
+    -webkit-backdrop-filter: blur(14px) saturate(1.12);
+}
+
+body.DarkMode .toc-widget .toc-title {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+body.DarkMode #toc-content .toc-link {
+    color: rgba(255, 255, 255, 0.66);
+}
+
+body.DarkMode #toc-content .toc-link:hover,
+body.DarkMode #toc-content .is-active-link {
+    color: #8fd8d2;
+}
+
+body.DarkMode #toc-content .toc-link::before {
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+body.DarkMode #toc-content .is-active-link::before {
+    background-color: #8fd8d2;
+}
+
+/* 首页第一屏：3D 深空太阳系 */
+.home-3d-light-cover {
+    background-color: #05070d;
+    isolation: isolate;
+}
+
+.home-3d-light-cover:before {
+    background:
+        radial-gradient(circle at 82% 36%, rgba(255, 194, 93, 0.12), rgba(255, 194, 93, 0) 30%),
+        linear-gradient(180deg, rgba(2, 4, 10, 0.02) 0%, rgba(3, 5, 12, 0.1) 58%, rgba(2, 3, 6, 0.42) 100%);
+}
+
+.home-3d-light-cover:after {
+    background:
+        radial-gradient(ellipse at 82% 48%, rgba(255, 172, 74, 0.11), rgba(255, 172, 74, 0) 31%),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.04) 50%, rgba(0, 0, 0, 0.36));
+}
+
+.home-3d-light-cover .container {
+    z-index: 4;
+}
+
+.home-3d-light-cover .brand {
+    text-shadow: 0 7px 30px rgba(0, 0, 0, 0.66);
+}
+
+.home-3d-light-cover .title {
+    letter-spacing: 0;
+}
+
+.home-3d-light-cover .description {
+    color: rgba(255, 246, 224, 0.94);
+}
+
+.home-3d-hero-page > canvas[id^="c_n"] {
+    display: none !important;
+}
+
+.home-hero-3d-scene {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 84% 40%, rgba(255, 185, 86, 0.34), transparent 24%),
+        radial-gradient(circle at 45% 50%, rgba(38, 65, 108, 0.52), transparent 42%),
+        linear-gradient(180deg, #04060d 0%, #080e1d 48%, #030407 100%);
+}
+
+.home-hero-3d-scene canvas {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.home-hero-3d-vignette,
+.home-hero-3d-grain {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+}
+
+.home-hero-3d-vignette {
+    background:
+        radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.06) 38%, rgba(0, 0, 0, 0.58) 100%),
+        linear-gradient(180deg, rgba(0, 0, 0, 0.1), transparent 38%, rgba(0, 0, 0, 0.28));
+}
+
+.home-hero-3d-grain {
+    display: none;
+}
+
+.home-hero-3d-fallback .home-hero-3d-scene {
+    background:
+        radial-gradient(circle at 84% 38%, rgba(255, 212, 122, 0.46), rgba(255, 184, 84, 0.18) 12%, rgba(255, 184, 84, 0) 28%),
+        radial-gradient(ellipse at 50% 58%, rgba(74, 99, 154, 0.28), transparent 42%),
+        radial-gradient(circle at 45% 44%, rgba(38, 65, 108, 0.5), transparent 36%),
+        linear-gradient(180deg, #04060d 0%, #080e1d 48%, #030407 100%);
+}
+
+@media only screen and (max-width: 601px) {
+    .home-3d-light-cover .title {
+        font-size: 2rem;
+        line-height: 1.25;
+    }
+
+    .home-3d-light-cover .description {
+        font-size: 1rem;
+        line-height: 1.45;
+    }
+
+}

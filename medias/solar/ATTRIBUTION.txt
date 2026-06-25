@@ -1,0 +1,20 @@
+Solar textures in this folder are from Solar System Scope:
+https://www.solarsystemscope.com/textures/
+
+The Solar System Scope texture library is distributed under Creative Commons Attribution 4.0 International (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+
+Files:
+- sun.jpg
+- earth.jpg
+- mars.jpg
+- jupiter.jpg
+- saturn.jpg
+- saturn-ring.png
+
+Solar System 360 GLB:
+https://sketchfab.com/3d-models/solar-system-360-da965e9c5db544eabc3acfd3a7c134e7
+Author: Triangle Education (https://sketchfab.com/rumeespam)
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+File:
+- solar_system_360.glb

@@ -599,7 +599,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2026-06-24
+                    2026-06-25
                 </div>
                 
 
@@ -783,7 +783,7 @@
 <blockquote>
 <p>路径</p>
 </blockquote>
-<p>绝对路径：D:\day01\images\1.jpg 或 <a href="https://KunkunTech.github.io/medias/logo.png">https://KunkunTech.github.io/medias/logo.png</a><br>
+<p>绝对路径：D:\day01\images\1.jpg 或 <a href="https://kunkuntech.vercel.app/medias/logo.png">https://kunkuntech.vercel.app/medias/logo.png</a><br>
 相对路径：</p>
 <ul>
 <li>上级目录：<code>&amp;lt;img src="../目标图片.gif"&amp;gt;</code></li>
@@ -816,7 +816,7 @@
 </blockquote>
 <ul>
 <li>内部链接：href=“目标网页.html”</li>
-<li>外部链接：href=“<a href="https://KunkunTech.github.io">https://KunkunTech.github.io</a>”</li>
+<li>外部链接：href=“<a href="https://kunkuntech.vercel.app">https://kunkuntech.vercel.app</a>”</li>
 <li>href=“#”：空链接，点击之后回到网页顶部</li>
 <li>target=“_self”：默认值，在当前窗口中跳转（覆盖原网页）</li>
 <li>target=“_blank”：在新窗口中跳转（保留原网页）</li>
@@ -847,7 +847,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://KunkunTech.github.io/37862.html">https://KunkunTech.github.io/37862.html</a>
+                    <a href="https://kunkuntech.vercel.app/37862.html">https://kunkuntech.vercel.app/37862.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1771,7 +1771,7 @@ $(function () {
             const strs = href.split('/');
             if (strs.length >= 3) {
                 const host = strs[2];
-                if (host !== 'KunkunTech.github.io' || window.location.host) {
+                if (host !== 'kunkuntech.vercel.app' || window.location.host) {
                     $this.attr('href', '/go.html?u='+Base64.encode(href)+'').attr('rel', 'external nofollow noopener noreferrer');
                     if (true) {
                         $this.attr('target', '_blank');
@@ -1799,26 +1799,42 @@ $(function () {
   </a>
 
 <script>
+  function updateNightModeIcon(isDark) {
+    isDark ? ($('#changeMode-top').removeClass('fa-moon-o').addClass('fa-sun-o'), $('#modeicon').attr('xlink:href', '#icon-sun')) : ($('#changeMode-top').removeClass('fa-sun-o').addClass('fa-moon-o'), $('#modeicon').attr('xlink:href', '#icon-moon'))
+  }
+  function setNightMode(isDark) {
+    $('body').toggleClass('DarkMode', isDark)
+    localStorage.setItem('isDark', isDark ? '1' : '0')
+    updateNightModeIcon(isDark)
+  }
   function checkNightMode() {
-    '1' === localStorage.getItem('isDark') ? ($('body').addClass('DarkMode'), $('#changeMode-top').removeClass('fa-moon-o').addClass('fa-sun-o'), $('#modeicon').attr('xlink:href', '#icon-sun')) : '0' === localStorage.getItem('isDark') ? $('#modeicon').attr('xlink:href', '#icon-moon') : new Date().getHours() >= 20 || new Date().getHours() < 7 ? ($('body').addClass('DarkMode'), $('#changeMode-top').removeClass('fa-moon-o').addClass('fa-sun-o'), $('#modeicon').attr('xlink:href', '#icon-sun')) : matchMedia('(prefers-color-scheme: dark)').matches ? ($('body').addClass('DarkMode'), $('#changeMode-top').removeClass('fa-moon-o').addClass('fa-sun-o'), $('#modeicon').attr('xlink:href', '#icon-sun')) : $('#modeicon').attr('xlink:href', '#icon-moon')
+    var mode = localStorage.getItem('isDark')
+    var isDark = '1' === mode || ('0' !== mode && (new Date().getHours() >= 20 || new Date().getHours() < 7 || matchMedia('(prefers-color-scheme: dark)').matches))
+    $('body').toggleClass('DarkMode', isDark)
+    updateNightModeIcon(isDark)
   }
   function switchNightMode() {
-    $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+    var isDark = !$('body').hasClass('DarkMode')
+    $('.night-mode-wipe').remove()
+    var $wipe = $('<div class="night-mode-wipe"></div>').addClass(isDark ? 'to-dark' : 'to-light')
+    $('body').append($wipe)
+    requestAnimationFrame(function () {
+      $wipe.addClass('is-active')
+      setNightMode(isDark)
       setTimeout(function () {
-        $('body').hasClass('DarkMode') ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#changeMode-top').removeClass('fa-sun-o').addClass('fa-moon-o'), $('#modeicon').attr('xlink:href', '#icon-moon')) : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#changeMode-top').removeClass('fa-moon-o').addClass('fa-sun-o'), $('#modeicon').attr('xlink:href', '#icon-sun')),
-          setTimeout(function () {
-            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
-              $(this).remove()
-            })
-          }, 2e3)
-      })
+        $wipe.addClass('is-leaving')
+        setTimeout(function () {
+          $wipe.remove()
+        }, 260)
+      }, 160)
+    })
   }
   function switchNightModeTop() {
-    $('body').hasClass('DarkMode') ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#changeMode-top').removeClass('fa-sun-o').addClass('fa-moon-o'), $('#modeicon').attr('xlink:href', '#icon-moon')) : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#changeMode-top').removeClass('fa-moon-o').addClass('fa-sun-o'), $('#modeicon').attr('xlink:href', '#icon-sun'))
+    switchNightMode()
   }
 </script>
 
 
 <script type="text/javascript"> var OriginTitile = document.title, st; 
-  document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "Σ(っ °Д °;)っ所以爱会消失？！", clearTimeout(st)) : (document.title = "φ(゜▽゜*)♪谢谢你再爱我一遍！", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) }) </script>
+  document.addEventListener("visibilitychange", function () { document.hidden ? (document.title = "先别走，故事还没讲完", clearTimeout(st)) : (document.title = "欢迎回来，刚好想你", st = setTimeout(function () { document.title = OriginTitile }, 3e3)) }) </script>
   
