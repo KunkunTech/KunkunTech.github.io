@@ -18,6 +18,7 @@
 
     <title>Kunkun&#39;s Secrets</title>
     <link rel="icon" type="image/png" href="/favicon.png">
+    
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
@@ -25,7 +26,7 @@
     <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
     <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
     <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css?v=solar-20260626">
+    <link rel="stylesheet" type="text/css" href="/css/my.css?v=solar-20261002">
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
@@ -433,9 +434,11 @@
 
             <div class="description center-align">
                 
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <span id="subtitle">从来没有真正的绝境, 只有心灵的迷途</span>
+                <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                 <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                    if (!window.Typed || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
                     var typed = new Typed("#subtitle", {
                         strings: [ 
                             
@@ -449,6 +452,7 @@
                         loop: false,
                         backSpeed: 50,
                         showCursor: true
+                    });
                     });
                 </script>
                 
@@ -485,7 +489,7 @@
                     <a href="/6568.html">
                         <div class="card-image">
                             
-                            <img src="https://i.loli.net/2021/07/28/2MBUqjwputmHD8C.jpg" class="responsive-img" alt="南戴河游记">
+                            <img src="https://i.loli.net/2021/07/28/2MBUqjwputmHD8C.jpg" class="responsive-img" alt="南戴河游记" loading="lazy" decoding="async" fetchpriority="low">
                             
                             <span class="card-title">南戴河游记</span>
                         </div>
@@ -533,7 +537,7 @@
                     <a href="/1217.html">
                         <div class="card-image">
                             
-                            <img src="https://i.loli.net/2021/07/29/gakchvIFE2n3ZCe.png" class="responsive-img" alt="钙钛矿简介">
+                            <img src="https://i.loli.net/2021/07/29/gakchvIFE2n3ZCe.png" class="responsive-img" alt="钙钛矿简介" loading="lazy" decoding="async" fetchpriority="low">
                             
                             <span class="card-title">钙钛矿简介</span>
                         </div>
@@ -581,7 +585,7 @@
                     <a href="/60697.html">
                         <div class="card-image">
                             
-                            <img src="https://s2.loli.net/2022/02/28/WCQbF1Irg4VcMqS.jpg" class="responsive-img" alt="Markdown 使用语法">
+                            <img src="https://s2.loli.net/2022/02/28/WCQbF1Irg4VcMqS.jpg" class="responsive-img" alt="Markdown 使用语法" loading="lazy" decoding="async" fetchpriority="low">
                             
                             <span class="card-title">Markdown 使用语法</span>
                         </div>
@@ -630,7 +634,7 @@
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="The First Secret">
+                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="The First Secret" loading="lazy" decoding="async" fetchpriority="low">
                             
                             <span class="card-title">The First Secret</span>
                         </div>
@@ -671,7 +675,7 @@
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Hello!">
+                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Hello!" loading="lazy" decoding="async" fetchpriority="low">
                             
                             <span class="card-title">Hello!</span>
                         </div>
@@ -780,8 +784,8 @@
     </div>
 </div>
 
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<script defer src="/libs/aplayer/APlayer.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
 

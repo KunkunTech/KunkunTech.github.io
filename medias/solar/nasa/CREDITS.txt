@@ -1,0 +1,18 @@
+Solar homepage - 2026-10-02
+
+3D meshes and texture maps: NASA Visualization Technology Applications and
+Development (VTAD). Mars: NASA/JPL-Caltech.
+Original source pages and downloads: sources.json in this directory.
+NASA media use guidelines: https://www.nasa.gov/nasa-brand-center/images-and-media/
+
+Adaptations: embedded maps resized/re-encoded as WebP, redundant glTF data
+removed. Authored planetary meshes, UVs and Saturn rings are retained.
+Solar surface shading, corona, prominence effects, lighting and composition
+are artistic additions. Poster images are renders of this same scene.
+No endorsement by NASA is implied.
+
+Axial obliquities and orbital/rotation ordering:
+https://nssdc.gsfc.nasa.gov/planetary/factsheet/
+The apparent sizes, distances and speeds are compressed for a blog header.
+This is not a physical scale model or a real-time astronomical ephemeris.
+All planets move independently; the Sun remains at a fixed location.

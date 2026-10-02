@@ -18,6 +18,7 @@
 
     <title>标签: 旅游 | Kunkun&#39;s Secrets</title>
     <link rel="icon" type="image/png" href="/favicon.png">
+    
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
@@ -25,7 +26,7 @@
     <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
     <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
     <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css?v=solar-20260626">
+    <link rel="stylesheet" type="text/css" href="/css/my.css?v=solar-20261002">
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
@@ -432,9 +433,11 @@
 
             <div class="description center-align">
                 
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <span id="subtitle">从来没有真正的绝境, 只有心灵的迷途</span>
+                <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                 <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                    if (!window.Typed || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
                     var typed = new Typed("#subtitle", {
                         strings: [ 
                             
@@ -448,6 +451,7 @@
                         loop: false,
                         backSpeed: 50,
                         showCursor: true
+                    });
                     });
                 </script>
                 
@@ -489,28 +493,10 @@
                 </a>
                 
                 
-                <a href="/tags/Markdown/" title="Markdown: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="Markdown" style="background-color: #F5EEF8;">Markdown
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E6%97%85%E6%B8%B8/" title="旅游: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            data-tagname="旅游" style="background-color: #D5F5E3;">旅游
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/tags/macOS/" title="macOS: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="macOS" style="background-color: #E8F8F5;">macOS
+                            data-tagname="macOS" style="background-color: #F5EEF8;">macOS
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -519,7 +505,25 @@
                 <a href="/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/" title="快捷键: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="快捷键" style="background-color: #FEF9E7;">快捷键
+                            data-tagname="快捷键" style="background-color: #D5F5E3;">快捷键
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/Markdown/" title="Markdown: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Markdown" style="background-color: #E8F8F5;">Markdown
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E6%97%85%E6%B8%B8/" title="旅游: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            data-tagname="旅游" style="background-color: #FEF9E7;">旅游
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -624,8 +628,8 @@
     </div>
 </div>
 
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<script defer src="/libs/aplayer/APlayer.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
 

@@ -18,6 +18,12 @@
 
     <title>Kunkun&#39;s Secrets</title>
     <link rel="icon" type="image/png" href="/favicon.png">
+    
+    <link rel="preload" as="image" href="/medias/solar/nasa/poster.webp" media="(min-width: 700px)" fetchpriority="high">
+    <link rel="preload" as="image" href="/medias/solar/nasa/poster-mobile.webp" media="(max-width: 699px) and (min-height: 651px)" fetchpriority="high">
+    <link rel="preload" as="image" href="/medias/solar/nasa/poster-small.webp" media="(max-width: 699px) and (max-height: 650px)" fetchpriority="high">
+    <link rel="modulepreload" href="/js/home-solar.bundle.js?v=solar-20261002">
+    
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
@@ -25,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
     <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
     <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css?v=solar-20260626">
+    <link rel="stylesheet" type="text/css" href="/css/my.css?v=solar-20261002">
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
@@ -472,10 +478,20 @@
 
     <div class="carousel-item red white-text bg-cover about-cover home-3d-light-cover">
         <div class="home-hero-3d-scene" aria-hidden="true">
+            <picture class="solar-poster">
+                <source media="(max-width: 699px) and (max-height: 650px)" srcset="/medias/solar/nasa/poster-small.webp">
+                <source media="(max-width: 699px)" srcset="/medias/solar/nasa/poster-mobile.webp">
+                <img src="/medias/solar/nasa/poster.webp" alt="" width="1600" height="1000" fetchpriority="high">
+            </picture>
             <canvas id="homeHero3dCanvas"></canvas>
             <div class="home-hero-3d-vignette"></div>
             <div class="home-hero-3d-grain"></div>
         </div>
+        <div class="solar-controls">
+            <a href="/medias/solar/nasa/CREDITS.txt" class="solar-credit" title="3D 模型来源与授权">NASA / VTAD</a>
+            <button type="button" class="solar-motion" aria-label="暂停太阳系动画" aria-pressed="true" title="暂停动画"><i class="fas fa-pause" aria-hidden="true"></i></button>
+        </div>
+        <script type="module" async src="/js/home-solar.bundle.js?v=solar-20261002"></script>
         <div class="container">
             <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
@@ -488,9 +504,11 @@
 
             <div class="description center-align">
                 
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <span id="subtitle">从来没有真正的绝境, 只有心灵的迷途</span>
+                <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                 <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                    if (!window.Typed || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
                     var typed = new Typed("#subtitle", {
                         strings: [ 
                             
@@ -504,6 +522,7 @@
                         loop: false,
                         backSpeed: 50,
                         showCursor: true
+                    });
                     });
                 </script>
                 
@@ -557,8 +576,6 @@
 
     
 </div>
-
-<script type="module" src="/js/home-hero-3d.js?v=solar-20260626"></script>
 
 <script>
     $(function () {
@@ -677,30 +694,6 @@
     
     <div class="col s12 m6" data-aos="zoom-in-up">
         
-             <div class="post-card" style="background-image: url('https://s2.loli.net/2022/02/28/WCQbF1Irg4VcMqS.jpg')">
-        
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                        
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="category">博客搭建</a>
-                        
-                    
-                </div>
-                <a href="/60697.html">
-                    <h3 class="post-title">Markdown 使用语法</h3>
-                </a>
-                <p class="post-description">这是一份Markdown使用的语法规则。</p>
-                <a href="/60697.html" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)" target="_blank">
-                    <i class="icon far fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="col s12 m6" data-aos="zoom-in-up">
-        
              <div class="post-card" style="background-image: url('https://s2.loli.net/2022/02/28/Jh2oRnTG7ijEtL5.jpg')">
         
             <div class="post-body">
@@ -715,7 +708,31 @@
                     <h3 class="post-title">mac快捷键</h3>
                 </a>
                 <p class="post-description">妙控键盘不会用？有这一份就够了！</p>
-                <a href="/20704.html" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #1AD6FD 0%, #1D62F0 100%)" target="_blank">
+                <a href="/20704.html" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)" target="_blank">
+                    <i class="icon far fa-eye fa-fw"></i>阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="col s12 m6" data-aos="zoom-in-up">
+        
+             <div class="post-card" style="background-image: url('https://s2.loli.net/2022/02/28/WCQbF1Irg4VcMqS.jpg')">
+        
+            <div class="post-body">
+                <div class="post-categories">
+                    
+                        
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="category">博客搭建</a>
+                        
+                    
+                </div>
+                <a href="/60697.html">
+                    <h3 class="post-title">Markdown 使用语法</h3>
+                </a>
+                <p class="post-description">这是一份Markdown使用的语法规则。</p>
+                <a href="/60697.html" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #1AD6FD 0%, #1D62F0 100%)" target="_blank">
                     <i class="icon far fa-eye fa-fw"></i>阅读更多
                 </a>
             </div>
@@ -746,7 +763,7 @@
                     <a href="/20704.html">
                         <div class="card-image">
                             
-                            <img src="https://s2.loli.net/2022/02/28/Jh2oRnTG7ijEtL5.jpg" class="responsive-img" alt="mac快捷键">
+                            <img src="https://s2.loli.net/2022/02/28/Jh2oRnTG7ijEtL5.jpg" class="responsive-img" alt="mac快捷键" loading="lazy" decoding="async" fetchpriority="low">
                             
                             <span class="card-title">mac快捷键</span>
                         </div>
@@ -799,7 +816,7 @@
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Hi, Xi">
+                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Hi, Xi" loading="lazy" decoding="async" fetchpriority="low">
                             
                             <span class="card-title">Hi, Xi</span>
                         </div>
@@ -839,7 +856,7 @@
                     <a href="/27524.html">
                         <div class="card-image">
                             
-                            <img src="https://s2.loli.net/2022/02/28/ONFrnxRbBk5DfPW.jpg" class="responsive-img" alt="Chinese Opera Art">
+                            <img src="https://s2.loli.net/2022/02/28/ONFrnxRbBk5DfPW.jpg" class="responsive-img" alt="Chinese Opera Art" loading="lazy" decoding="async" fetchpriority="low">
                             
                             <span class="card-title">Chinese Opera Art</span>
                         </div>
@@ -879,7 +896,7 @@
                     <a href="/65493.html">
                         <div class="card-image">
                             
-                            <img src="https://s2.loli.net/2022/02/28/cuJKPHhxdEBvoTq.png" class="responsive-img" alt="SuperWoman at My Home">
+                            <img src="https://s2.loli.net/2022/02/28/cuJKPHhxdEBvoTq.png" class="responsive-img" alt="SuperWoman at My Home" loading="lazy" decoding="async" fetchpriority="low">
                             
                             <span class="card-title">SuperWoman at My Home</span>
                         </div>
@@ -919,7 +936,7 @@
                     <a href="/617.html">
                         <div class="card-image">
                             
-                            <img src="https://s2.loli.net/2022/02/28/JSP8BOjLMqHu4Gp.png" class="responsive-img" alt="我社恐，我不配">
+                            <img src="https://s2.loli.net/2022/02/28/JSP8BOjLMqHu4Gp.png" class="responsive-img" alt="我社恐，我不配" loading="lazy" decoding="async" fetchpriority="low">
                             
                             <span class="card-title">我社恐，我不配</span>
                         </div>
@@ -960,7 +977,7 @@
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="PLQY">
+                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="PLQY" loading="lazy" decoding="async" fetchpriority="low">
                             
                             <span class="card-title">PLQY</span>
                         </div>
@@ -1001,7 +1018,7 @@
                         <div class="card-image">
                             
                             
-                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="小萌新进校园">
+                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="小萌新进校园" loading="lazy" decoding="async" fetchpriority="low">
                             
                             <span class="card-title">小萌新进校园</span>
                         </div>
@@ -1041,7 +1058,7 @@
                     <a href="/60455.html">
                         <div class="card-image">
                             
-                            <img src="https://i.loli.net/2021/08/03/Bc4yarVuvxsJDMU.png" class="responsive-img" alt="卤化物钙钛矿纳米晶体">
+                            <img src="https://i.loli.net/2021/08/03/Bc4yarVuvxsJDMU.png" class="responsive-img" alt="卤化物钙钛矿纳米晶体" loading="lazy" decoding="async" fetchpriority="low">
                             
                             <span class="card-title">卤化物钙钛矿纳米晶体</span>
                         </div>
@@ -1089,7 +1106,7 @@
                     <a href="/24524.html">
                         <div class="card-image">
                             
-                            <img src="https://i.loli.net/2021/08/17/CKJ2uBzSbTRQGA8.jpg" class="responsive-img" alt="钙钛矿相关英语词汇">
+                            <img src="https://i.loli.net/2021/08/17/CKJ2uBzSbTRQGA8.jpg" class="responsive-img" alt="钙钛矿相关英语词汇" loading="lazy" decoding="async" fetchpriority="low">
                             
                             <span class="card-title">钙钛矿相关英语词汇</span>
                         </div>
@@ -1137,7 +1154,7 @@
                     <a href="/37862.html">
                         <div class="card-image">
                             
-                            <img src="https://s2.loli.net/2022/02/28/4JhywuU2pzSdNb1.jpg" class="responsive-img" alt="HTML的基础知识">
+                            <img src="https://s2.loli.net/2022/02/28/4JhywuU2pzSdNb1.jpg" class="responsive-img" alt="HTML的基础知识" loading="lazy" decoding="async" fetchpriority="low">
                             
                             <span class="card-title">HTML的基础知识</span>
                         </div>
@@ -1254,8 +1271,8 @@
     </div>
 </div>
 
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<script defer src="/libs/aplayer/APlayer.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
 
@@ -1529,11 +1546,6 @@ $(function () {
 
     <!--腾讯兔小巢-->
     
-    
-    <script type="text/javascript" color="0,0,255"
-        pointColor="0,0,255" opacity='0.7'
-        zIndex="-1" count="99"
-        src="/libs/background/canvas-nest.js"></script>
     
 
     

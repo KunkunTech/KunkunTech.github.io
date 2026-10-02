@@ -18,6 +18,7 @@
 
     <title>关于 | Kunkun&#39;s Secrets</title>
     <link rel="icon" type="image/png" href="/favicon.png">
+    
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
@@ -25,7 +26,7 @@
     <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
     <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
     <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css?v=solar-20260626">
+    <link rel="stylesheet" type="text/css" href="/css/my.css?v=solar-20261002">
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
@@ -439,9 +440,11 @@
 
             <div class="description center-align">
                 
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <span id="subtitle">从来没有真正的绝境, 只有心灵的迷途</span>
+                <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                 <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                    if (!window.Typed || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
                     var typed = new Typed("#subtitle", {
                         strings: [ 
                             
@@ -455,6 +458,7 @@
                         loop: false,
                         backSpeed: 50,
                         showCursor: true
+                    });
                     });
                 </script>
                 
@@ -645,7 +649,7 @@
         },
         xAxis: {
             type: 'category',
-            data: ["2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05","2026-06"]
+            data: ["2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05","2026-06","2026-07","2026-08","2026-09","2026-10"]
         },
         yAxis: {
             type: 'value',
@@ -697,7 +701,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"博客搭建","value":2},{"name":"随笔","value":8},{"name":"研究僧note","value":4},{"name":"mac","value":1}],
+                data: [{"name":"随笔","value":8},{"name":"博客搭建","value":2},{"name":"研究僧note","value":4},{"name":"mac","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -721,7 +725,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["钙钛矿","HTML","Markdown","旅游","macOS","快捷键"]
+                data: ["钙钛矿","HTML","macOS","快捷键","Markdown","旅游"]
             }
         ],
         yAxis: [
@@ -910,18 +914,6 @@
             
             
             
-            <a href="/tags/Markdown/">
-                <span class="chip center-align waves-effect waves-light chip-default">Markdown</span>
-            </a>
-            
-            
-            
-            <a href="/tags/%E6%97%85%E6%B8%B8/">
-                <span class="chip center-align waves-effect waves-light chip-default">旅游</span>
-            </a>
-            
-            
-            
             <a href="/tags/macOS/">
                 <span class="chip center-align waves-effect waves-light chip-default">macOS</span>
             </a>
@@ -930,6 +922,18 @@
             
             <a href="/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/">
                 <span class="chip center-align waves-effect waves-light chip-default">快捷键</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Markdown/">
+                <span class="chip center-align waves-effect waves-light chip-default">Markdown</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E6%97%85%E6%B8%B8/">
+                <span class="chip center-align waves-effect waves-light chip-default">旅游</span>
             </a>
             
             
@@ -1042,8 +1046,8 @@
     </div>
 </div>
 
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<script defer src="/libs/aplayer/APlayer.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
 

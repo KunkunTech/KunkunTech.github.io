@@ -18,6 +18,7 @@
 
     <title>分类 | Kunkun&#39;s Secrets</title>
     <link rel="icon" type="image/png" href="/favicon.png">
+    
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
@@ -25,7 +26,7 @@
     <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
     <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
     <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css?v=solar-20260626">
+    <link rel="stylesheet" type="text/css" href="/css/my.css?v=solar-20261002">
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
@@ -432,9 +433,11 @@
 
             <div class="description center-align">
                 
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <span id="subtitle">从来没有真正的绝境, 只有心灵的迷途</span>
+                <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
                 <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                    if (!window.Typed || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
                     var typed = new Typed("#subtitle", {
                         strings: [ 
                             
@@ -448,6 +451,7 @@
                         loop: false,
                         backSpeed: 50,
                         showCursor: true
+                    });
                     });
                 </script>
                 
@@ -481,13 +485,13 @@
                 
                 
                 
-                <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" title="博客搭建: 2">
-                    <div class="moleskine-wrapper"> <div class="moleskine-notebook"> <div class="chip notebook-cover center-align waves-effect waves-light  chip-default " style="background-color: #F9EBEA;"> <div class="notebook-skin  chip-default " >博客搭建 </div> </div> <div class="notebook-page dotted"></div> </div> </div>
+                <a href="/categories/%E9%9A%8F%E7%AC%94/" title="随笔: 8">
+                    <div class="moleskine-wrapper"> <div class="moleskine-notebook"> <div class="chip notebook-cover center-align waves-effect waves-light  chip-default " style="background-color: #F9EBEA;"> <div class="notebook-skin  chip-default " >随笔 </div> </div> <div class="notebook-page dotted"></div> </div> </div>
                 </a>
                 
                 
-                <a href="/categories/%E9%9A%8F%E7%AC%94/" title="随笔: 8">
-                    <div class="moleskine-wrapper"> <div class="moleskine-notebook"> <div class="chip notebook-cover center-align waves-effect waves-light  chip-default " style="background-color: #F5EEF8;"> <div class="notebook-skin  chip-default " >随笔 </div> </div> <div class="notebook-page dotted"></div> </div> </div>
+                <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" title="博客搭建: 2">
+                    <div class="moleskine-wrapper"> <div class="moleskine-notebook"> <div class="chip notebook-cover center-align waves-effect waves-light  chip-default " style="background-color: #F5EEF8;"> <div class="notebook-skin  chip-default " >博客搭建 </div> </div> <div class="notebook-page dotted"></div> </div> </div>
                 </a>
                 
                 
@@ -545,7 +549,7 @@
                     color: '#3C4858'
                 }
             },
-            indicator: [{"name":"博客搭建","max":9},{"name":"随笔","max":9},{"name":"研究僧note","max":9},{"name":"mac","max":9}],
+            indicator: [{"name":"随笔","max":9},{"name":"博客搭建","max":9},{"name":"研究僧note","max":9},{"name":"mac","max":9}],
             nameGap: 5,
             center: ['50%','55%'],
             radius: '66%'
@@ -556,7 +560,7 @@
             itemStyle: {normal: {areaStyle: {type: 'default'}}},
             data : [
                 {
-                    value : [2,8,4,1],
+                    value : [8,2,4,1],
                     name : '文章分类数量'
                 }
             ]
@@ -614,8 +618,8 @@
     </div>
 </div>
 
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<script defer src="/libs/aplayer/APlayer.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
 
