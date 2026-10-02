@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kunkuntech.vercel.app/sitemap.xml

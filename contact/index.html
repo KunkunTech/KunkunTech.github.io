@@ -5,9 +5,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="contact, Kunkun&#39;s Secrets">
-    <meta name="description" content="">
+    <meta name="description" content="Kunkun 的个人博客，记录科研笔记、技术学习与生活。世界很暗，但是你来了。">
+    <link rel="canonical" href="https://kunkuntech.vercel.app/contact/">
+    <meta property="og:title" content="contact | Kunkun&#39;s Secrets">
+    <meta property="og:description" content="Kunkun 的个人博客，记录科研笔记、技术学习与生活。世界很暗，但是你来了。">
+    <meta property="og:url" content="https://kunkuntech.vercel.app/contact/">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
@@ -26,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
     <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
     <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css?v=solar-20261002">
+    <link rel="stylesheet" type="text/css" href="/css/my.css?v=repair-20261002">
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
@@ -38,7 +43,7 @@
 
 
 
-<body>
+<body class="inner-page">
     <header class="navbar-fixed">
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
@@ -161,24 +166,6 @@
         </a>
       </li>
       
-      <li>
-        <a href="/movies">
-          
-          <i class="fas fa-film" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>电影</span>
-        </a>
-      </li>
-      
-      <li>
-        <a href="/books">
-          
-          <i class="far fa-file-alt" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>书籍</span>
-        </a>
-      </li>
-      
     </ul>
     
   </li>
@@ -217,7 +204,7 @@
   </li>
   
   <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light" aria-label="搜索">
       <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
     </a>
   </li>
@@ -233,7 +220,7 @@
         <div class="logo-name">Kunkun&#39;s Secrets</div>
         <div class="logo-desc">
             
-            Never really desperate, only the lost of the soul.
+            Kunkun 的个人博客，记录科研笔记、技术学习与生活。世界很暗，但是你来了。
             
         </div>
     </div>
@@ -351,26 +338,6 @@
                   </a>
                 </li>
               
-                <li>
-
-                  <a href="/movies " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-film" style="position: absolute;left:50px" ></i>
-			      
-		          <span>电影</span>
-                  </a>
-                </li>
-              
-                <li>
-
-                  <a href="/books " style="margin-left:75px">
-				  
-				   <i class="fa far fa-file-alt" style="position: absolute;left:50px" ></i>
-			      
-		          <span>书籍</span>
-                  </a>
-                </li>
-              
             </ul>
           
         </li>
@@ -420,253 +387,28 @@
 
 </header>
 
-    <link rel="stylesheet" type="text/css" href="/css/barrager.css">
-<script src="/libs/valine/av-min.js"></script>
-<script src="/libs/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="/js/jquery.barrager.js"></script>
-
-<div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                世界很暗，但是你来了
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle">从来没有真正的绝境, 只有心灵的迷途</span>
-                <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    document.addEventListener('DOMContentLoaded', function () {
-                    if (!window.Typed || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-                    var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "从来没有真正的绝境, 只有心灵的迷途",
-                            
-                                "Never really desperate, only the lost of the soul",
-                            
-                        ],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: false,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
+    
+<div class="bg-cover pd-header about-cover inner-cover">
+    <div class="container"><h1>弹幕墙</h1></div>
 </div>
 
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
-
-
-    </div>
-</div>
-
-<style>
-    #send{
-        margin-bottom: 10px;
-        width: 49%;
-        background-color: #0ba360;
-    }
-    #clear{
-        margin-bottom: 10px;
-        width: 49%;
-        background-color: #e7c65c;
-    }
-    p{
-        text-align: center;
-    }
-</style>
-<main class="content">
-    <div id="contact" class="container chip-container">
-        <div class="card">
-            <div class="card-content">
-                <div class="tag-title center-align">
-                    <i class="fas fa-comments"></i>&nbsp;&nbsp;弹幕墙
-                </div>
-                <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
-            </div>
-            <!--valine评论弹幕-->
-            
-                <p>
-                    <b>没人知道你，就多说两句吧</b><br>
-                    <b>留下你的足迹，欢迎交换友链</b><br>
-                    <b>友链信息</b><br>
-                    <b>博客名称: Kunkun's Secrets</b><br>
-                    <b>博客网址: https://kunkuntech.vercel.app</b><br>
-                    <b>博客头像: https://kunkuntech.vercel.app/medias/logo.png</b><br>
-                    <b>博客介绍: Every cloud has a silver lining</b><br>
-                </p>
-                <div class="container">
-                    <section id="custom" class="bb-section">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <form class="form-inline">
-                                    <div class="form-group">
-                                        文字：<input class="form-control" name="info" type="text" placeholder="hello, world"/>
-                                    </div>
-                                    <div class="form-group">
-                                        链接：<input class="form-control" name="href" type="text" placeholder="https://github.com/blinkfox/hexo-theme-matery"/>
-                                    </div>
-                                    <div class="form-group">
-                                        速度：<input  class="form-control"  name="speed" type="text" placeholder="5~20" value="16" />
-                                    </div>
-                                </form>
-                                <div class="form-group">
-                                    <button id="send"  class="btn" onclick="run()">留言</button>
-                                    <button id="clear" class="btn " onclick="clear_barrage()"> 清除</button>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-                <script type="text/javascript">
-                    AV.init({
-                        appId: 'yCLM87caUM577YgEN3ifs1We-9Nh9j0Va',
-                        appKey: 'G5hXmmFHLn5MuigAUlDAclEv'
-                    });
-
-                    $(function() {
-                        do_barrager();
-                        async function do_barrager() {
-                            let lists = [];
-                            //查询弹幕
-                            const query = new AV.Query('barrager');
-                            const barrager = await query.find().then((barrager) => {
-                                lists = barrager;
-                            })
-                            let length = lists.length;
-                            let index = 0;
-                            const timer = setInterval(() => {
-                                if (index === length) {
-                                    clearInterval(timer);
-                                    do_barrager()
-                                } else {
-                                    let obj = lists[index]
-                                    let jsonObject = eval('(' + JSON.stringify(obj) + ')');
-                                    $('body').barrager({
-                                        'img': '/medias/barrager/' + Math.floor(Math.random() * 3) + ".png",
-                                        'href': jsonObject.href,
-                                        'info': jsonObject.info,
-                                        'speed': jsonObject.speed
-                                    });
-                                    index++;
-                                }
-                            }, 500)
-                        }
-                    });
-
-                    //发送弹幕
-                    function  run(){
-                        let info = $('input[name=info]').val();
-                        (info === '' ) ?  info='hello world' : info=info;
-                        let href = $('input[name=href]').val();
-                        (href === '' ) ?  href='https://github.com/blinkfox/hexo-theme-matery' : href=href;
-                        let speed = parseInt($('input[name=speed]').val());
-                        if(speed > 20 || speed < 5)
-                            speed = Math.floor(Math.random() * 10) + 5;
-                        const Barrager = AV.Object.extend('barrager');
-                        const barrager = new Barrager();
-                        barrager.set('href', href);
-                        barrager.set('info', info);
-                        barrager.set('speed', speed);
-                        barrager.save().then((todo) => {
-                            $(" input[ name='info' ] ").val("")
-                            $(" input[ name='href' ] ").val("")
-                            $(" input[ name='speed' ] ").val("")
-                        });
-                    }
-
-                    function  clear_barrage()
-                    {
-                        $.fn.barrager.removeAll();
-                    }
-
-                </script>
-            
-        </div>
-
-        <!--其他评论card-->
-        <div class="card">
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-
-            
-
-        </div>
-    </div>
+<main class="container content">
+    <section class="reading-surface barrage-wall">
+        <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
+        
+        <p class="service-status" role="status"><i class="far fa-comment" aria-hidden="true"></i> 弹幕暂不可用</p>
+        
+    </section>
 </main>
 
 
     <footer class="page-footer bg-color">
     
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="song"
-                   id="18538644"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
+        <div class="music-platform-link">
+    <a href="https://music.163.com/#/playlist?id=5421219104" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-headphones" aria-hidden="true"></i> 网易云歌单
+    </a>
 </div>
-
-<script defer src="/libs/aplayer/APlayer.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
     
 
@@ -677,7 +419,6 @@
             
                 <span id="year">2021-2026</span>
             
-            <span id="year">2021</span>
             <a href="/about" target="_blank">Kunkun</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
@@ -685,25 +426,13 @@
             
             
             
-                
             
-            
-                <span id="busuanzi_container_site_pv">
-                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
-                    <span id="busuanzi_value_site_pv" class="white-color"></span>
-            </span>
-            
-            
-                <span id="busuanzi_container_site_uv">
-                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
-                    <span id="busuanzi_value_site_uv" class="white-color"></span>
-            </span>
             
             <br>
 
             <!-- 运行天数提醒. -->
             
-                <span id="sitetime"> Loading ...</span>
+                <span id="sitetime"></span>
                 <script>
                     var calcSiteTime = function () {
                         var seconds = 1000;
@@ -760,7 +489,7 @@
             <br>
             
         </div>
-        <div class="col s12 m4 l4 social-link social-statis">
+        <div class="col s12 m4 l4 social-link ">
 
 
     <a href="mailto:18811011899@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
@@ -931,8 +660,6 @@ $(function () {
     <script src="/libs/others/clicklove.js" async="async"></script>
     
     
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
 
     
 
@@ -955,28 +682,7 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-
-        <script src="//cdn.jsdelivr.net/npm/js-base64/base64.min.js"></script>
-        <script>
-        const hasAttr = (e,a) => a.some(_=> e.attr(_)!==undefined);
-        $('a').each(function() {
-          const $this = $(this);
-          if(hasAttr($this,["data-fancybox","ignore-external-link"])) return;
-          const href = $this.attr('href');
-          if (href && href.match('^((http|https|thunder|qqdl|ed2k|Flashget|qbrowser|ftp|rtsp|mms)://)')) {
-            const strs = href.split('/');
-            if (strs.length >= 3) {
-                const host = strs[2];
-                if (host !== 'kunkuntech.vercel.app' || window.location.host) {
-                    $this.attr('href', '/go.html?u='+Base64.encode(href)+'').attr('rel', 'external nofollow noopener noreferrer');
-                    if (true) {
-                        $this.attr('target', '_blank');
-                    }
-                }
-            }
-          }
-        });
-        </script></body>
+</body>
 
 </html>
 
@@ -988,11 +694,11 @@ $(function () {
       <path d="M512 981.333333C253.013333 981.333333 42.666667 770.986667 42.666667 512S253.013333 42.666667 512 42.666667h17.28c18.816 0 36.096 12.544 43.946667 31.402666 7.850667 18.816 1.578667 39.253333-12.586667 51.797334a242.261333 242.261333 0 0 0-84.736 183.637333 241.834667 241.834667 0 0 0 241.706667 241.749333c70.656 0 136.576-31.402667 183.68-84.778666a49.066667 49.066667 0 0 1 51.797333-14.122667c18.816 6.272 31.402667 23.552 31.402667 42.368V512C981.333333 770.986667 770.986667 981.333333 512 981.333333zM420.949333 147.84C257.706667 188.586667 136.832 336.213333 136.832 512A375.125333 375.125333 0 0 0 512 887.168c175.786667 0 323.370667-120.874667 364.16-284.16a332.586667 332.586667 0 0 1-160.085333 40.832c-185.258667 0-335.914667-150.656-335.914667-335.914667 0-56.490667 14.08-111.445333 40.789333-160.085333z" fill="#2c2c2c" p-id="1635"></path>
     </symbol>
   </svg>
-  <a onclick="switchNightMode()" class="icon-V hidden" title="切换主题">
+  <button type="button" onclick="switchNightMode()" class="icon-V hidden" title="切换主题" aria-label="切换主题">
     <svg width="48" height="48" viewBox="0 0 1024 1024">
       <use id="modeicon" xlink:href="#icon-moon"></use>
     </svg>
-  </a>
+  </button>
 
 <script>
   function updateNightModeIcon(isDark) {

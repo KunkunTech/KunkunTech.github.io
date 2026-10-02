@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="author" content="Kunkun's Blog">
     <title>Kunkun网址导航</title>
+    <link rel="canonical" href="https://kunkuntech.vercel.app/navigate/">
     <meta name="keywords" content="https://kunkuntech.vercel.app,百宝箱,在线工具箱,素材资源网站,网站导航">
     <meta name="description" content="WebStack - 收集国内外优秀资源网站，https://kunkuntech.vercel.app">
     <link rel="icon" type="image/png" href="/medias/logo.png">
@@ -25,6 +26,9 @@
     <script src="https://cdn.jsdelivr.net/gh/Yafine/cdn@3.2.1/source/box/js/jquery-1.11.1.min.js"></script>
     <!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
     <style>
+        .logo-env .logo img { max-width: 72px; max-height: 72px; object-fit: contain; }
+        .logo-env .logo a::after { content: "Kunkun"; color: #eee; margin-left: 10px; font-size: 18px; }
+        @media (max-width: 767px) { .logo-env .logo img { max-width: 42px; max-height: 42px; } }
         footer.main-footer .go-up {
             width: 45px;
             float: right;

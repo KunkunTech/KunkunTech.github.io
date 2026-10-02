@@ -5,6 +5,7 @@
  *@url      https://github.com/yaseng/jquery.barrager.js
  */
 (function($) {
+    let sequence = 0;
 	$.fn.barrager = function(barrage) {
 		barrage = $.extend({
 			close: true,
@@ -13,7 +14,7 @@
 			color: '#ffffff',
 		}, barrage || {});
 
-		const time = new Date().getTime();
+		const time = Date.now() + '_' + (++sequence);
 		const barrager_id = 'barrage_' + time;
 		const id = '#' + barrager_id;
 		const div_barrager = $("<div class='barrage' id='" + barrager_id + "'></div>").appendTo($(this));
@@ -29,7 +30,7 @@
 		const bottom =array[Math.floor(Math.random()*5)];
 
 		div_barrager.css("bottom", bottom + "px");
-		div_barrager_box = $("<div class='barrage_box cl'></div>").appendTo(div_barrager);
+		const div_barrager_box = $("<div class='barrage_box cl'></div>").appendTo(div_barrager);
 		if(barrage.img){
 			div_barrager_box.append("<a class='portrait z' href='javascript:;'></a>");
 			const img = $("<img src='' >").appendTo(id + " .barrage_box .portrait");
@@ -40,11 +41,13 @@
 			div_barrager_box.append(" <div class='close z'></div>");
 		}
 
-		const content = $("<a title='' href='' target='_blank'></a>").appendTo(id + " .barrage_box .p");
-		content.attr({
-			'href': barrage.href,
-			'id': barrage.id
-		}).empty().append(barrage.info);
+		const content = $("<a target='_blank' rel='noopener noreferrer'></a>").appendTo(id + " .barrage_box .p");
+        try {
+            const url = new URL(String(barrage.href || ''));
+            if (['https:', 'http:'].includes(url.protocol) && !url.username && !url.password) content.attr('href', url.href);
+        } catch (_) { /* Plain messages need no link. */ }
+        content.text(String(barrage.info || '').slice(0, 200));
+        barrage.speed = Number.isFinite(Number(barrage.speed)) ? Math.min(20, Math.max(5, Number(barrage.speed))) : 16;
 		content.css('color', barrage.color);
 
 		const i = 0;
